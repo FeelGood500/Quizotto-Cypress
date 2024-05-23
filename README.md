@@ -13,13 +13,14 @@ Quizotto in form presented here, on Github is a Quiz application with 10 questio
 
 
 ## General Information
-Project was created in purpose to obtain a grade at Uni. The project had to be an e-learning platform in order to be correct with requirements that our group has been provided with.
+Project was created in purpose to obtain a grade at Uni. The project had to contain Cypress tests that are used to manually test the e-learning app included in the project.
 
 
 ## Technologies Used
 - axios: 1.4.0,
 - vue: 3.2.47,
 - vue-i18n: 9.2.2
+- Cypress: v13.9.0
 
 ## Screenshots
 Example screenshot of the first question
@@ -32,7 +33,12 @@ Example screenshot of the first question
 2. Open terminal in VS code
 3. While being in main folder of the project:
     1. Write *npm i* command
-4. To run project type *npm run dev* in the terminal
+4. To run project type *npm run dev -- --host* in the terminal
+5. Notice local address used to host the app
+6. Insert local address used to host the app into each Cypress test located in e2e file
+7. Open second terminal in VS code
+8. While being in the mamin folder of the project:
+    1. Write *npx cypress open* command
 
 
 ## Usage
